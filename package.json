@@ -2,7 +2,11 @@
   "name": "chstools",
   "version": "1.0.0",
   "description": "chstools 是一个命令行工具集，批量处理图片、翻译、图片尺寸，懒人必备，提高工作效率。",
-  "main": "index.js",  "scripts": {
+  "main": "index.js",
+  "bin": {
+    "chstools": "./index.js"
+  },
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,0 +1,22 @@
+{
+  "name": "yptools",
+  "version": "1.0.0",
+  "description": "yptools 是一个命令行工具集，批量处理图片、翻译、图片尺寸，懒人必备，提高工作效率。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HansenCCC/npm-yptools.git"
+  },
+  "keywords": [
+    "command-line"
+  ],
+  "author": "Hansen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HansenCCC/npm-yptools/issues"
+  },
+  "homepage": "https://github.com/HansenCCC/npm-yptools#readme"
+}

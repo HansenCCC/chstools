@@ -1,0 +1,26 @@
+# Node.js 特定
+node_modules/          # 忽略 node_modules 文件夹
+npm-debug.log*         # 忽略 npm debug 日志文件
+yarn-debug.log*        # 忽略 yarn debug 日志文件
+yarn-error.log         # 忽略 yarn 错误日志文件
+
+# 编译产生的文件
+/dist/                 # 忽略编译文件夹
+/build/                # 忽略构建文件夹
+/lib/                  # 如果你的构建输出到 lib 文件夹
+/coverage/             # 如果使用代码覆盖率工具生成的文件
+
+# 环境配置文件
+.env                   # 忽略环境变量文件
+.env.local             # 忽略本地环境文件
+.env.development      # 忽略开发环境文件
+.env.test              # 忽略测试环境文件
+.env.production       # 忽略生产环境文件
+
+# 临时文件
+.DS_Store             # macOS 特定的隐藏文件
+Thumbs.db             # Windows 缩略图缓存
+.vscode/              # 忽略 VS Code 编辑器配置文件夹
+
+# 忽略日志文件
+*.log                 # 忽略所有日志文件

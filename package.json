@@ -1,12 +1,17 @@
 {
   "name": "chstools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "chstools 是一个命令行工具集，批量处理图片、翻译、图片尺寸，懒人必备，提高工作效率。",
   "main": "index.js",
   "type": "module",
   "bin": {
     "chstools": "index.js"
   },
+  "files": [
+    "index.js",
+    "lib",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm install sharp yargs chalk"

@@ -3,6 +3,7 @@ import { scanPorts } from './lib/scanPorts.js';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers'; // 需要从 helpers 导入 hideBin
 import { replaceStringInFiles } from './lib/replaceString.js';
+import { scanNetworkDevices } from './lib/scanWifi.js';
 
 const commandYargs = yargs(hideBin(process.argv))
     .command('scanport <host> <ports>', '扫描 IP 地址的指定端口范围', (yargs) => {
@@ -32,6 +33,9 @@ const commandYargs = yargs(hideBin(process.argv))
             });
     }, (argv) => {
         replaceStringInFiles(argv);
+    })
+    .command('scanwifi', '扫描当前 Wi-Fi 下的所有设备', async () => {
+        await scanNetworkDevices();
     })
     .help()
     .alias('help', 'h')
